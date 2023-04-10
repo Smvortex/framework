@@ -1339,7 +1339,7 @@ class Web2All_Manager_ErrorHandler {
   public static $DebugLevel=0;
   public static $allowErrorSuppression=false;
   
-  public static function errorHandlerCallback($code, $string, $file, $line, $context) {
+  public static function errorHandlerCallback($code, $string, $file, $line, $context = null) {
     if(self::$DebugLevel >= Web2All_Manager_Main::DEBUGLEVEL_FULL) {
       echo "[Start de Web2All_Manager_ErrorHandler->errorHandlerCallback]<br />\n";
     }
